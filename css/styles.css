@@ -75,8 +75,8 @@ a.logo:hover{
 .box{
     background-color: #FFFFFF;
     border-radius: 25px 25px 25px 25px;
-    overflow: hidden;
-    border-width: 1px;
+    border-width: 2px;
+    border-color: #333;
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -130,10 +130,21 @@ p{
 }
 
 
-/******** Intro ********/
-#top-intro{
+/******** Spacing betweens sections ********/
+#top-intro, #events, #contact, #about, #slack{
     padding-top: 100px;
 }
+
+.team-card{
+    height: 500px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* 
 .col-2-box{
     display: flex;
@@ -156,12 +167,11 @@ p{
 /******** Next Events *******/
 
 #events h2{
-    margin-left: -20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.events{
+/* .events{
     min-height: 200px;
     background-color: whitesmoke;
     border-radius: 25px;
@@ -176,7 +186,7 @@ p{
     box-shadow 300ms ease 0ms;
     margin-bottom: 20px;
 
-}
+} */
 
 /******** Mailchimp Signup ********/
 #mc_embed_signup {
