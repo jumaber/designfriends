@@ -7,6 +7,9 @@ Text Headers: #666666
 Text Body: #333333;
 */
 
+body{
+    background-image: url(https://flamboyant-brahmagupta-403db5.netlify.app/img/bg.png);
+}
 /********** Top Navigation Bar **********/
 
 .main-nav{
@@ -17,8 +20,9 @@ Text Body: #333333;
 .logo{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    color: #333 !important;
+    color: #333;
     font-weight: 700;
+    text-decoration: none !important;
     
 }
 
@@ -46,8 +50,6 @@ a.top-nav:hover{
     text-decoration-color: #fc9569;
     text-decoration-thickness: 0.2em;
     text-underline-offset: 1.5px;
-  
-
 }
 
 a.top-nav:active{
@@ -62,7 +64,6 @@ a.logo{
     line-height: 20px;
     color: white;
     float: left;
-
 }
 
 a.logo:hover{
@@ -72,22 +73,10 @@ a.logo:hover{
     animation-duration: 1s;  */
 }
 
-.box{
-    background-color: #FFFFFF;
-    border-radius: 25px 25px 25px 25px;
-    border-width: 2px;
-    border-color: #333;
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    box-shadow: 10px 10px 0px 0px rgb(0 0 0 / 0%);
-    transition: transform 300ms ease 0ms,box-shadow 300ms ease 0ms;
-}
 
 /********** Typography **********/
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
@@ -130,39 +119,62 @@ p{
 }
 
 
-/******** Spacing betweens sections ********/
-#top-intro, #events, #contact, #about, #slack{
+/******** Intro + Newsletter ********/
+
+.newsletter{ 
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 10px 10px 0px 0px rgb(0 0 0 / 0%);
+    transition: transform 300ms ease 0ms,
+    box-shadow 300ms ease 0ms;
+}
+
+.newsletter-p {
+    font-size: 1rem;
+}
+
+div.mc-field-group input, div.mc-field-group { /*input field mailchimp*/
+    width: 250px;
+    border-radius: 20px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+}
+
+input.button{ /* Mailchimp Subcribe Button */
+    background-color: #fc9569;
+    width: 210px;
+}
+
+
+/******** General ********/
+#top-intro{
     padding-top: 100px;
 }
 
-.team-card{
-    height: 500px;
+#slack{
+    margin-top: 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: #ffd3ea;
 }
 
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#contact{  
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: #d1ffe7;
+    margin-bottom: 200px;
 }
 
-/* 
-.col-2-box{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-   
+#about{
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: aliceblue;
 }
 
-.intro{
-    width:55%; */
-/* 
-}
-
-.newsletter{
-    width: 35%;
-} */
 
 /******** Next Events *******/
 
@@ -171,26 +183,70 @@ p{
     margin-bottom: 20px;
 }
 
-/* .events{
-    min-height: 200px;
-    background-color: whitesmoke;
-    border-radius: 25px;
-    border-width: 2px !important;
-    border-color: #333333 !important;
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    box-shadow: 10px 10px 0px 0px rgb(0 0 0 / 0%);
-    transition: transform 300ms ease 0ms,
-    box-shadow 300ms ease 0ms;
-    margin-bottom: 20px;
-
-} */
-
-/******** Mailchimp Signup ********/
-#mc_embed_signup {
-    width: 300px;
-    font: 14px Helvetica, Arial, sans-seri    f;
+.card{
+    border-radius: 20px;
 }
-				
+.when{
+    font-weight: bold;
+}
+
+/******** Team Scroll Bar ******/
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#team::-webkit-scrollbar {
+    display: none;
+}
+
+#team::-webkit-scrollbar-track {
+    display: none;
+}
+
+#team::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+/********** Media Queries **********/
+
+
+/* ==============================
+Medium devices // Bigger than iPad (768px and smaller)
+================================= */
+@media only screen and (min-width: 768px) {
+
+    .intro {        
+        width: 40%;
+    }
+
+    #events, #slack, #about, #contact{
+        margin-top: 100px !important;
+    }
+}
+/* ==============================
+Big devices // Bigger than iPad (1024px and smaller)
+================================= */
+@media only screen and (min-width: 1024px) {
+   .intro {
+       width: 60%;
+   }
+
+    #top-intro h2 {
+        font-size: 50px;
+    }
+
+    #top-intro h4 {
+        font-size: 31px;
+    }
+
+    .newsletter-p {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+}
