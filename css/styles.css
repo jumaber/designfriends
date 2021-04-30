@@ -19,7 +19,7 @@ body{
 
 .logo{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #333;
     font-weight: 700;
     text-decoration: none !important;
@@ -134,6 +134,11 @@ input.button{ /* Mailchimp Subcribe Button */
     width: 210px;
 }
 
+input.button:hover {
+    /* Mailchimp Subcribe Button */
+    color: #fc9569;
+}
+
 
 /******** General ********/
 #top-intro{
@@ -181,12 +186,9 @@ img .card-img-top{
 }
 
 .events .card{
-min-height: 280px;
+min-height: 290px;
 }
 
-.events .card .btn-primary {
-    margin-top: 20px;
-}
 
 
 #team.card-text{
@@ -210,26 +212,17 @@ min-height: 280px;
  #team .btn-primary{
      font-size: 0.9rem;
  }
-/* ******* Team Scroll Bar *****
 
-.scrolling-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
+ .elevation:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0px 0px rgb(0, 0, 0, 0.3);
+    transition: transform 300ms ease-in-out 0ms, box-shadow 300ms ease-in-out 0ms;
+ }
 
-#team::-webkit-scrollbar {
-    display: none;
-}
+ /* .card-body{
+          transform: translateX (-5px) translateY (-5px);
 
-#team::-webkit-scrollbar-track {
-    display: none;
-}
-
-#team::-webkit-scrollbar-thumb {
-    display: none;
-} */
-
+ 
 /********** Media Queries **********/
 
 
