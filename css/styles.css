@@ -10,6 +10,11 @@ Text Body: #333333;
 body{
     background-image: url(https://flamboyant-brahmagupta-403db5.netlify.app/img/bg.png);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /********** Top Navigation Bar **********/
 
 .main-nav{
@@ -41,16 +46,16 @@ a.top-nav{
     font-weight: 700;
     color: #333;
     padding: 0 10px;
-    
 }
 
 a.top-nav:hover{
     color: #fc9569 !important;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: #fc9569;
     text-decoration-thickness: 0.2em;
     text-underline-offset: 1.5px;
 }
+
 
 a.top-nav:active{
     color: #fc9569;
@@ -156,7 +161,7 @@ input.button:hover {
     border-radius: 20px;
     border-width: 1px;
     background-color: #d1ffe7;
-    margin-bottom: 200px;
+    margin-bottom: 400px;
 }
 
 #about{
@@ -170,7 +175,7 @@ img .card-img-top{
     width: 168px;
 }
 
-/******** Next Events *******/
+/********  Events *******/
 
 #events h2{
     margin-top: 20px;
@@ -188,8 +193,6 @@ img .card-img-top{
 .events .card{
 min-height: 290px;
 }
-
-
 
 #team.card-text{
     font-size: 0.9rem;
@@ -213,16 +216,38 @@ min-height: 290px;
      font-size: 0.9rem;
  }
 
+
+ /****** Animation ******/
+
  .elevation:hover{
     transform: translate(-5px, -5px);
     box-shadow: 10px 10px 0px 0px rgb(0, 0, 0, 0.3);
     transition: transform 300ms ease-in-out 0ms, box-shadow 300ms ease-in-out 0ms;
  }
 
- /* .card-body{
-          transform: translateX (-5px) translateY (-5px);
+ /******** Footer ********/
 
- 
+ .imprint{
+    background-color: #88a8ec;
+ }
+
+ .imprint h6{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 0 10px;
+ }
+
+ .imprint h6:hover {
+     color: #333;
+}
+
+.imprint h6:active {
+     color: #333;
+}
+
 /********** Media Queries **********/
 
 
