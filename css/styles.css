@@ -180,6 +180,15 @@ img .card-img-top{
     font-weight: bold;
 }
 
+.events .card{
+min-height: 280px;
+}
+
+.events .card .btn-primary {
+    margin-top: 20px;
+}
+
+
 #team.card-text{
     font-size: 0.9rem;
 }
