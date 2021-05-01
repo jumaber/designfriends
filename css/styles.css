@@ -265,7 +265,10 @@ Medium devices // Bigger than iPad (768px and smaller)
         min-height: 450px;
     }
 
-
+    .intro {
+        max-width: 430px;
+    }
+   
 }
 /* ==============================
 Big devices // Bigger than iPad (1024px and smaller)
@@ -296,4 +299,17 @@ Big devices // Bigger than iPad (1024px and smaller)
         margin-bottom: 400px;
     }
 
+    .intro {
+        max-width: 550px;
+    }
 }
+
+/* ==============================
+Large devices // Bigger than Laptop (1440px and smaller)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+    .intro {
+        max-width: 730px;
+    }
+    }
