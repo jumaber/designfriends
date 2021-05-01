@@ -78,27 +78,26 @@ p{
 }
 
 /******** Buttons ********/
-.btn-primary{
+
+.btn{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #333;
     padding: .3em 1em;
-    background-color: #fc9569;
-    border-width: 1px;
-    border-color: #fc9569;
     border-radius: 30px;
 }
 
-.btn-primary:hover {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #fc9569 !important;
-    padding: .3em 1em;
-    background-color: white;
+.btn-primary{
+    color: #333;
+    background-color: #fc9569;
+    border-color: #fc9569;
     border-width: 1px;
+}
+
+.btn-primary:hover {
+    background-color: white;
     border-color: #333;
+    border-width: 1px;
     border-radius: 30px;
     transition: 
     transform 300ms ease 0ms,
@@ -112,6 +111,20 @@ p{
     background-color: #fc9569 !important;
     color: white !important;
 }
+
+.btn-secondary{
+    font-size: 1rem;
+    background-color: white;
+    border-color: #333;
+    color: #fc9569;
+}
+
+.btn-secondary:hover {
+    background-color: #fc9569;
+    border-color: #333;
+    color: white;
+}
+
 
 
 /******** Intro + Newsletter ********/
