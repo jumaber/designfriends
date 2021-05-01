@@ -182,7 +182,6 @@ div.mc-field-group{
     border-radius: 20px;
     border-width: 1px;
     background-color: #d1ffe7;
-    margin-bottom: 400px;
 }
 
 #about{
@@ -296,6 +295,10 @@ Big devices // Bigger than iPad (1024px and smaller)
 
     #team .card-text{
         font-size: 1rem;
+    }
+
+    #contact {
+        margin-bottom: 400px;
     }
 
 }
