@@ -115,7 +115,6 @@ p{
     background-color: aliceblue;
     border-radius: 10px;
     padding: 25px;
-    width: 300px;
     box-shadow: 10px 10px 0px 0px rgb(0 0 0 / 0%);
     transition: transform 300ms ease 0ms,
     box-shadow 300ms ease 0ms;
@@ -126,7 +125,6 @@ p{
 }
 
 div.mc-field-group input, div.mc-field-group { /*input field mailchimp*/
-    width: 250px;
     border-radius: 20px;
     color: rgb(110, 110, 110);
     font-size: 14px;
@@ -136,12 +134,17 @@ div.mc-field-group input, div.mc-field-group { /*input field mailchimp*/
 
 input.button{ /* Mailchimp Subcribe Button */
     background-color: #fc9569;
-    width: 210px;
+
 }
 
 input.button:hover {
     /* Mailchimp Subcribe Button */
     color: #fc9569;
+}
+
+div.mc-field-group input,
+div.mc-field-group{
+    width:100%;
 }
 
 
@@ -172,7 +175,6 @@ input.button:hover {
 
 img .card-img-top{
     border-radius: 20px;
-    width: 168px;
 }
 
 /********  Events *******/
@@ -190,22 +192,8 @@ img .card-img-top{
     font-weight: bold;
 }
 
-.events .card{
-min-height: 290px;
-}
-
 #team.card-text{
     font-size: 0.9rem;
-}
-
-.team-card{
-    width: 48%;
-    margin-bottom: 1rem;
-    max-width: 300px;
-}
-
-#team .card{
-    height: 480px;
 }
 
  #team .card-text {
@@ -256,21 +244,21 @@ Medium devices // Bigger than iPad (768px and smaller)
 ================================= */
 @media only screen and (min-width: 768px) {
 
-    .intro {        
-        width: 40%;
-    }
 
     #events, #slack, #about, #contact{
-        margin-top: 100px !important;
+        margin-top: 100px;
     }
+
+    #team .card{
+        min-height: 450px;
+    }
+
+
 }
 /* ==============================
 Big devices // Bigger than iPad (1024px and smaller)
 ================================= */
 @media only screen and (min-width: 1024px) {
-   .intro {
-       width: 60%;
-   }
 
     #top-intro h2 {
         font-size: 50px;
@@ -288,18 +276,8 @@ Big devices // Bigger than iPad (1024px and smaller)
         font-size: 22px;
     }
 
-    #team .card {
-        height: 430px;
-    }
-
-    .team-card {
-        width: 23%;
-        margin-bottom: 1rem;
-    }
-
     #team .card-text{
         font-size: 1rem;
     }
 
-   
 }
