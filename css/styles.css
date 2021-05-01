@@ -110,7 +110,7 @@ p{
 
 .btn-primary:active, .btn-primary:focus {
     background-color: #fc9569 !important;
-    color: white;
+    color: white !important;
 }
 
 
