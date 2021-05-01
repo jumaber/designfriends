@@ -108,8 +108,8 @@ p{
 }
 
 .btn-primary:active, .btn-primary:focus {
-    background-color: #fc9569 !important;
-    color: white !important;
+    background-color: #88a8ec !important;
+    color: #333 !important;
 }
 
 .btn-secondary{
@@ -125,13 +125,18 @@ p{
     color: white;
 }
 
+.btn-secondary:active, .btn-secondary:focus {
+    background-color: #88a8ec !important;
+    border-color: #88a8ec !important;
+    color: #333 !important;
+}
 
 
 /******** Intro + Newsletter ********/
 
 .newsletter{ 
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 25px;
     box-shadow: 10px 10px 0px 0px rgb(0 0 0 / 0%);
     transition: transform 300ms ease 0ms,
@@ -157,12 +162,7 @@ input.button{ /* Mailchimp Subcribe Button */
 
 input.button:hover {
     /* Mailchimp Subcribe Button */
-    color: #fc9569;
-}
-
-div.mc-field-group input,
-div.mc-field-group{
-    width:100%;
+    color: #fc9569;    
 }
 
 
@@ -196,11 +196,6 @@ img .card-img-top{
 
 /********  Events *******/
 
-#events h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .card{
     border-radius: 20px;
 }
@@ -218,7 +213,7 @@ img .card-img-top{
  }
 
  #team .btn-primary{
-     font-size: 0.9rem;
+    font-size: 0.9rem;
  }
 
 
@@ -246,11 +241,11 @@ img .card-img-top{
  }
 
  .imprint h6:hover {
-     color: #333;
+    color: #333;
 }
 
 .imprint h6:active {
-     color: #333;
+    color: #333;
 }
 
 /********** Media Queries **********/
