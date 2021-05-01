@@ -108,6 +108,11 @@ p{
     box-shadow 300ms ease 0ms;
 }
 
+.btn-primary:active, .btn-primary:focus {
+    background-color: #fc9569;
+    color: white;
+}
+
 
 /******** Intro + Newsletter ********/
 
