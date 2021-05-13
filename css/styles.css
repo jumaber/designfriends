@@ -95,6 +95,7 @@ p{
 }
 
 .btn-primary:hover {
+    color: #fc9569;
     background-color: white;
     border-color: #333;
     border-width: 1px;
