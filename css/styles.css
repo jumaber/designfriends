@@ -218,6 +218,9 @@ img .card-img-top{
  }
 
 
+
+ 
+
  /****** Animation ******/
 
  .elevation:hover{
@@ -263,7 +266,7 @@ Medium devices // Bigger than iPad (768px and smaller)
     }
 
     #team .card{
-        min-height: 450px;
+        min-height: 170px;
     }
 
     .intro {
