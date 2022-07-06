@@ -31,6 +31,11 @@ html {
     
 }
 
+a.logo:hover{
+    text-decoration: none !important;
+
+}
+
 .navbar-toggler{
     border: none !important;
 }
