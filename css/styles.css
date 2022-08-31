@@ -3,6 +3,8 @@ Primary Color (orange): #fc9569;
 Secondary Color (blue): #88a8ec;
 Pink: #ffd3ea;
 Green: #d1ffe7;
+Yellow: #FFF067;
+Light Orange: #FFD5B7;
 Text Headers: #666666 
 Text Body: #333333;
 */
@@ -211,7 +213,7 @@ width: 180px;
 max-height: 35px;
 border-radius: 8px;
 padding: 8px;
-background-color:#333;
+background-color:#FFD5B7;
 text-align:center;
 }
 
@@ -219,7 +221,7 @@ text-align:center;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold !important;
     font-size: 0.8rem;
-    color: white;
+    color: #333;
     align-items: center;
 }
 
