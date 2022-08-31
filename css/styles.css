@@ -209,11 +209,13 @@ img .card-img-top{
 }
 
 .tag{
-width: 180px;
+min-width: 180px;
+max-width: 200px;
 max-height: 35px;
 border-radius: 8px;
 padding: 8px;
-background-color:#FFD5B7;
+margin-bottom: 10px;
+background-color: aliceblue;
 text-align:center;
 }
 
