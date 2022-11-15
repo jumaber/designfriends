@@ -206,11 +206,12 @@ img .card-img-top{
 
 .card{
     border-radius: 20px;
+
 }
 
 .tag{
 min-width: 180px;
-max-width: 200px;
+max-width: 220px;
 max-height: 35px;
 border-radius: 8px;
 padding: 8px;
